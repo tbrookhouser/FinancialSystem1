@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+
 //import com.google.gson.Gson;
 import com.thoughtworks.xstream.XStream;
 
@@ -72,6 +73,7 @@ public class PersonLog {
 			BufferedReader reader = new BufferedReader(new FileReader(file));
 			Scanner personScan = new Scanner(reader);
 			
+			int numberOfEntries = Integer.parseInt(reader.readLine());
 			String line = null;
 			while((line = reader.readLine()) != null)//while there is still a line in the file
 			{

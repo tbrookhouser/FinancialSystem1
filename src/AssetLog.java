@@ -162,6 +162,14 @@ public class AssetLog {
 		return stock;
 	}
 	
+	public PrivateInvestment parsePI(String token){
+		String[] array = token.split(",");
+		String code = array[0];
+		String label = array[2];
+		double quarterlyDividend = Double.parseDouble(array[3]);
+		double baseRateOfReturn = 
+		
+	}
 	public Name parseName(String name){
 		String[] nameArray = name.split(",");
 		String firstName = nameArray[0];

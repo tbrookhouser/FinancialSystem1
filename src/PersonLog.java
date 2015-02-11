@@ -2,15 +2,13 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
 
-
-import com.google.gson.Gson;
+//import com.google.gson.Gson;
 import com.thoughtworks.xstream.XStream;
 
 
@@ -21,7 +19,7 @@ public class PersonLog {
 		ArrayList<Person> personList = new ArrayList<Person>();
 		ArrayList<String> customerEmail = new ArrayList<String>();
 		XStream xstream = new XStream();
-		Gson gson = new Gson();
+		//Gson gson = new Gson();
 		/**
 		 * returns the person array List
 		 * @return personList
@@ -109,18 +107,6 @@ public class PersonLog {
 		    }
 		}
 		
-		public void writePersonJson(ArrayList<Person> person){
-			String json = gson.toJson(person);
-			try {  
-				   //write converted json data to a file named "Persons.json"  
-				   FileWriter writer = new FileWriter("data/Persons.json");  
-				   writer.write(json);  
-				   writer.close();  
-				    
-				  } catch (IOException e) {  
-				   e.printStackTrace();  
-				  }  
-		}
 		
 		
 		/**

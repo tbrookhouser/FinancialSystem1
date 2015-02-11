@@ -1,0 +1,21 @@
+<?xml version="1.0"?><Person>
+  <idNumber>doc05</idNumber>
+  <brokerData></brokerData>
+  <name>
+    <firstName>Davison</firstName>
+    <lastName> Peter</lastName>
+  </name>
+  <address>
+    <street1>123 Cabo San Lucas</street1>
+    <city> Los Cabos</city>
+    <state> BCS</state>
+    <zip> </zip>
+    <country> Mexico</country>
+  </address>
+  <email>
+    <string>msmith@who.com</string>
+    <string>thedoc@cse.unl.edu</string>
+    <string></string>
+    <string></string>
+  </email>
+</Person>

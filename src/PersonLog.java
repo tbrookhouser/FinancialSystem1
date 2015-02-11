@@ -5,7 +5,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Calendar;
 import java.util.Scanner;
 
 //import com.google.gson.Gson;
@@ -80,11 +79,12 @@ public class PersonLog {
 				Person person = parsePerson(line);
 				//System.out.println(person.getName());
 				personList.add(person);
-				writePersonXml(person);
+				//writePersonXml(person);
 			}
+			writePersonXml(personList);
 			//System.out.print(personList);
 		}
-		public void writePersonXml( Person person) {
+		public void writePersonXml( ArrayList <Person> person) {
 		    System.out.println("save person XML");
 		    FileOutputStream fos = null;
 		    try{            

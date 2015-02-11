@@ -127,7 +127,7 @@ public class AssetLog {
 			parseStock(token);
 		}
 		else {
-			
+			parsePI(token);
 		}
 	}
 	
@@ -167,7 +167,11 @@ public class AssetLog {
 		String code = array[0];
 		String label = array[2];
 		double quarterlyDividend = Double.parseDouble(array[3]);
-		double baseRateOfReturn = 
+		double baseRateOfReturn = Double.parseDouble(array[4]);
+		double omegaMeasure = Double.parseDouble(array[5]);
+		double totalValue = Double.parseDouble(array[6]);
+		PrivateInvestment pi = new PrivateInvestment(code,label,quarterlyDividend,baseRateOfReturn,omegaMeasure,totalValue);
+		return pi;
 		
 	}
 	public Name parseName(String name){

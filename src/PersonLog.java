@@ -18,7 +18,6 @@ public class PersonLog {
 		//creates a new ArrayList to store people
 		ArrayList<Person> personList = new ArrayList<Person>();
 		ArrayList<String> customerEmail = new ArrayList<String>();
-		//WritePersonXML writePersonXml = new WritePersonXML();
 		XStream xstream = new XStream();
 		//Gson gson = new Gson();
 		/**
@@ -77,14 +76,11 @@ public class PersonLog {
 			String line = null;
 			while((line = reader.readLine()) != null)//while there is still a line in the file
 			{
-				//System.out.println(line);
 				Person person = parsePerson(line);
-				//System.out.println(person.getName());
 				personList.add(person);
-				//writePersonXml(person);
+				
 			}
 			writePersonXml(personList);
-			//System.out.print(personList);
 		}
 		public void writePersonXml( ArrayList <Person> person) {
 		    System.out.println("save person XML");
@@ -122,7 +118,6 @@ public class PersonLog {
 		public Person parsePerson(String token)
 		{
 			String[] array = token.split(";");
-			//System.out.println(array[1]);
 			String idNumber = array[0];
 			String brokerData = array[1];
 			String name = array[2];
@@ -159,7 +154,6 @@ public class PersonLog {
 		}
 		
 		public ArrayList<String> parseEmail(String email){
-			//System.out.println(email);
 			ArrayList<String> emailList = new ArrayList<String>(Arrays.asList(email.split(",")));
 			return emailList;
 		}

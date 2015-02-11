@@ -89,9 +89,5 @@
 	<classpathentry kind="lib" path="C:/Users/Tara/Downloads/xstream-distribution-1.4.7-bin/xstream-1.4.7/lib/xstream-hibernate/jboss-logging-3.1.0.GA.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Tara/Downloads/xstream-distribution-1.4.7-bin/xstream-1.4.7/lib/xstream-hibernate/jboss-transaction-api_1.1_spec-1.0.1.Final.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Tara/Downloads/xstream-distribution-1.4.7-bin/xstream-1.4.7/lib/xstream-hibernate/slf4j-api-1.6.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Brooke/Downloads/gson-2.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Brooke/Downloads/gson-2.3.1.pom"/>
-	<classpathentry kind="lib" path="C:/Users/Brooke/Downloads/gson-2.3.1-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Brooke/Downloads/gson-2.3.1-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
